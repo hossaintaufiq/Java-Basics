@@ -1,20 +1,25 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
-package objects;
 
-/**
- *
- * @author Hp
- */
+package objects;
 public class Objects {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+
+      
+        
+        
+        Calculation C1= new Calculation();// Creating an object 
+        // here new is a constructor to creat a Calculation object 
+        
+        // now calling the objects methods 
+        
+        int answer =C1.Calculation(3,5); // reciving the value in a int variable and then print the value 
+//        1st we have to declare the object and then pass the values acording to the declared method
+
+            System.out.println(answer);
+
+        
+        
+        
     }
     
 }
