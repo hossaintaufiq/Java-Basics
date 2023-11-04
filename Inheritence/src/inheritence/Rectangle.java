@@ -13,4 +13,17 @@ public class Rectangle {
         this.width=width;
     }
     
+    public Rectangle(double width,double height, String color, boolean filled){
+        this.height=height;
+        this.width=width;
+        super(color);
+        super(filled);
+    }
+     public double getPerimeter(){
+         return 2*(width+height);
+     }
+     public double getDiameter(){
+         
+     }
+    
 }
