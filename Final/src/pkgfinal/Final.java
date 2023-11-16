@@ -1,22 +1,27 @@
 package pkgfinal;
 
+import java.util.Scanner;
+
 public class Final {
 
     public static void main(String[] args) {
+        while (true) {
+            try {
+                Scanner n = new Scanner(System.in);
+                System.out.print("Enter num1: ");
+                int num1 = n.nextInt();
 
-        try {
-            int x = 10;
-            int y = 0;
-            double result = x / y;
-            System.out.println("Result : " + result);
-        }catch(Exception e){
-            System.out.println("The exception is : "+ e );
-        }
-        finally{
-            System.out.println("Last line of the code ....");
+                System.out.print("Enter num2: ");
+                int num2 = n.nextInt();
+
+                int result = num1 / num2;
+
+                System.out.println("Result : " + num1 + "/" + num2 + " = " + result);
+            } catch (Exception e) {
+                System.out.println("Exception : " + e);
+            }
         }
 
-        
     }
 
 }
