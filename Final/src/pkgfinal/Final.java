@@ -1,20 +1,22 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package pkgfinal;
 
-/**
- *
- * @author Hp
- */
 public class Final {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+
+        try {
+            int x = 10;
+            int y = 0;
+            double result = x / y;
+            System.out.println("Result : " + result);
+        }catch(Exception e){
+            System.out.println("The exception is : "+ e );
+        }
+        finally{
+            System.out.println("Last line of the code ....");
+        }
+
+        
     }
-    
+
 }
